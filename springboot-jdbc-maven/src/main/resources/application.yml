@@ -1,0 +1,15 @@
+logging: 
+  level: 
+    root: DEBUG
+  pattern: 
+    console: "%-5level %logger{36}  - %msg%n"
+spring: 
+  application: 
+    name: springboot-jdbc-maven
+  datasource: 
+    hikari: 
+      connectionTimeout: 20000
+      maximumPoolSize: 5
+    password: lpras
+    url: "jdbc:mysql://localhost:3306/myspringdb"
+    username: lpras
